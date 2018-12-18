@@ -1,7 +1,5 @@
 def turn_count(board)
 count = 0
-
-
 if board.count{|i| i == "X"} == 1
 count+=1
 elsif board.count{|i| i == "X"} == 1 and board.count{|i| i == "O"} == 1
@@ -23,3 +21,13 @@ count+=9
 end
 
 end
+
+
+
+def current_player(board)
+if turn_count(board)%2 == 0 
+return "X"
+else 
+return "O"
+end 
+end 
