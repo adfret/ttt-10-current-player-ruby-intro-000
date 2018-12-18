@@ -29,5 +29,7 @@ if turn_count(board)%2 == 0
 return "O"
 elsif turn_count(board)%2 == 1
 return "X"
+else
+  return "X"
 end
 end
