@@ -25,9 +25,9 @@ end
 
 
 def current_player(board)
-  if board.select{|i| i=="O" or "i"=="X"}.count == 0
+  if board.select{|i| i=="O" or i =="X"}.count == 0
     return "X"
-  elsif board.select{|i| "i"=="X" or "i" == "O"}.count == 2
+  elsif board.select{|i| i=="X" or i == "O"}.count == 2
     return "X"
 elsif turn_count(board).even?
 return "X"
