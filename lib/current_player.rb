@@ -2,7 +2,7 @@ def turn_count(board)
 count = 0
 
 
-if board.count{|i| i == "X"} == 1 
+if board.count{|i| i == "X"} == 1
 count+=1
 elsif board.count{|i| i == "X"} == 1 and board.count{|i| i == "O"} == 1
 count+=2
@@ -20,6 +20,6 @@ elsif board.count{|i| i == "X"} == 4 and  board.count{|i| i == "O"} == 4
 count+=8
 elsif board.count{|i| i == "X"} == 5 and  board.count{|i| i == "O"} == 4
 count+=9
-end 
+end
 
 end
