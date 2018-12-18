@@ -33,5 +33,6 @@ elsif turn_count(board).even?
 return "X"
 elsif turn_count(board).odd?
 return "O"
-ends
+end
+
 end
